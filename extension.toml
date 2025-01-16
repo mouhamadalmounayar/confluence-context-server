@@ -1,10 +1,10 @@
 id = "confluence-context-server"
 name = "Confluence Context Server"
-version = "0.0.1"
+version = "1.0.0"
 schema_version = 1
 authors = ["Mouhamad Al Mounayar muhammad.mnayar@gmail.com"]
 description = "Confluence Context Server"
-repository = ""
+repository = "https://github.com/mouhamadalmounayar/confluence-context-server"
 
 [context_servers.confluence-context-server]
 name = "Confluence Context Server"
