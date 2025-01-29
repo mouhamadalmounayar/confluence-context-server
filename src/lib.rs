@@ -22,8 +22,8 @@ impl zed::Extension for ConfluenceContextServer {
         _project: &Project,
     ) -> Result<Command> {
         let version = zed::npm_package_installed_version("mcp-confluence")?;
-        if version.as_deref() != Some("1.0.1") {
-            zed::npm_install_package("mcp-confluence", "1.0.1")?;
+        if version.as_deref() != Some("1.1.0") {
+            zed::npm_install_package("mcp-confluence", "1.1.0")?;
         }
         let settings = ContextServerSettings::for_project("confluence-context-server", _project)?;
         let Some(settings) = settings.settings else {
